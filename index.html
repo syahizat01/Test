@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffeef2;
+            color: #4a4a4a;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin: 0 auto;
+        }
+        h1 { color: #ff6b8b; }
+        button {
+            background-color: #ff6b8b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover { transform: scale(1.05); }
+        .hidden-content { display: none; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hey Orbit, I made something for you...</h1>
+        <p>Click the button below to open your surprise.</p>
+        <button onclick="revealSurprise()">Open ❤️</button>
+
+        <div id="surprise" class="hidden-content">
+            <h2>Happy Anniversary! 🌹</h2>
+            <p>Every single day with you is my favorite day. Thank you for being my person, my best friend, and my greatest adventure.</p>
+            </div>
+    </div>
+
+    <script>
+        function revealSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+            // Optional: Add code here to trigger audio or confetti!
+        }
+    </script>
+</body>
+</html>
+initial commit
